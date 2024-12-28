@@ -1,10 +1,10 @@
 #!/bin/bash
 
-export TOOL_MAIN_NAME=EVOLINX
+export TOOL_MAIN_NAME=ZRAXYL
 export TOOL_ENV_CHECK=none
 
 # Simple check for build env ( Check weather were in github workflow or in dev env )
-if [ -f /home/developer/EVOLINX/developing/rootsys/locale-gen ]; then
+if [ -f /home/developer/$TOOL_MAIN_NAME/developing/rootsys/locale-gen ]; then
     # Github env
     export TOOL_ENV_CHECK=developing
 else
